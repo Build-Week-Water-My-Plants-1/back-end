@@ -6,27 +6,27 @@
 ## Authentication Endpoints:
 
 ### Register
-[POST] /api/auth/register
+**_[POST]_** /api/auth/register
 
 
 ### Login
-[POST] /api/auth/login
+**_[POST]_** /api/auth/login
 
 
 ## Plants
 
 ### Get all plants for user:
-[GET] /api/:id/plants
+**_[GET]_** /api/:id/plants
 
 
 ### Get individual plant:
-[GET] /api/:id/plants/:plantId
+**_[GET]_** /api/:id/plants/:plantId
 
 ### Add a Plant
-[POST] /api/:id/plants
+**_[POST]_** /api/:id/plants
 
 ### Edit a Plant
-[PUT] /api/:id/plants/:plantId
+**_[PUT]_** /api/:id/plants/:plantId
 
 ### Delete a Plant
-[DELETE] /api/:id/plants/:plantId
+**_[DELETE]_** /api/:id/plants/:plantId
