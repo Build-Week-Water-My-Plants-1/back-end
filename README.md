@@ -6,13 +6,14 @@
 
 ### Register
 
-[POST] /api/auth/register
+[POST] `/api/auth/register`
 Required fields for registering a user:
 
-username (unique)
-password
-phone_number (unique)
-data schema:
+-username (unique)
+-password
+-phone_number (unique)
+
+# data schema:
 
 ```json
 {
@@ -26,12 +27,13 @@ Returns registered user's info, with password hashed.
 
 ### Login
 
-[POST] /api/auth/login
+[POST] `/api/auth/login`
 Required fields for logging in a user:
 
-username (unique)
-password
-data schema:
+-username (unique)
+-password
+
+# data schema:
 
 ```json
 {
@@ -46,27 +48,27 @@ Returns token used for authorization on other endpoints, and user ID.
 
 ### Get all plants for user:
 
-[GET] /api/:id/plants
+[GET] `/api/:id/plants`
 
 ### Get individual plant:
 
-[GET] /api/:id/plants/:plantId
+[GET] `/api/:id/plants/:plantId`
 
 ### Add a Plant
 
-[POST] /api/:id/plants
+[POST] `/api/:id/plants`
 
 ### Edit a Plant
 
-[PUT] /api/:id/plants/:plantId
+[PUT] `/api/:id/plants/:plantId`
 
 ### Delete a Plant
 
-[DELETE] /api/:id/plants/:plantId
+[DELETE] `/api/:id/plants/:plantId`
 
 ### Data Schemas
 
-### user:
+### User:
 
 ```json
 {
