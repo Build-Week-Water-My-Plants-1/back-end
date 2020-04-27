@@ -14,11 +14,14 @@ password
 phone_number (unique)
 data schema:
 
+```json
 {
-"username": "david",
-"password": "123",
-"phone_number": "(123)456-7810"
+  "username": "david",
+  "password": "123",
+  "phone_number": "(123)456-7810"
 }
+```
+
 Returns registered user's info, with password hashed.
 
 ### Login
@@ -30,10 +33,13 @@ username (unique)
 password
 data schema:
 
+```json
 {
-"username": "david",
-"password": "123",
+  "username": "david",
+  "password": "123"
 }
+```
+
 Returns token used for authorization on other endpoints, and user ID.
 
 ## Plants
@@ -58,21 +64,25 @@ Returns token used for authorization on other endpoints, and user ID.
 
 [DELETE] /api/:id/plants/:plantId
 
-Data Schemas
-user:
+### Data Schemas
 
+### user:
+
+```json
 {
-"id": 1,
-"username": "david",
-"password": "123",
-"phone_number": "(123)456-7810"
+  "id": 1,
+  "username": "david",
+  "password": "123",
+  "phone_number": "(123)456-7810"
 }
+```
 
-plants:
+### Plants:
 
+```json
 {
-"id": 1,
-"common_name": "Rose",
-"scientific_name": "Rosa",
-
+  "id": 1,
+  "common_name": "Rose",
+  "scientific_name": "Rosa"
 }
+```
