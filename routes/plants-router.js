@@ -27,7 +27,7 @@ router.get('/:id/plants/:plantId', validateUserId, (req, res, next) => {
 
 //POST
 router.post('/:id/plants', validateUserId, (req, res) => {
-  Plants.insert({ user_id: req.params.id, ...req.body })
+  Plants.insert({ ...req.body })
     .then((newPlant) => {
       res.status(201).json(newPlant);
     })
