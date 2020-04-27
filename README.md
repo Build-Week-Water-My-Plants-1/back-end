@@ -9,9 +9,9 @@
 [POST] `/api/auth/register`
 Required fields for registering a user:
 
--username (unique)
--password
--phone_number (unique)
+- username (unique)
+- password
+- phone_number (unique)
 
 # data schema:
 
@@ -30,8 +30,8 @@ Returns registered user's info, with password hashed.
 [POST] `/api/auth/login`
 Required fields for logging in a user:
 
--username (unique)
--password
+- username (unique)
+- password
 
 # data schema:
 
