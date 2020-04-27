@@ -1,4 +1,4 @@
-# Water My Plants API:
+# Water My Plants API
 
 ### herokuurl: PENDING
 
@@ -13,13 +13,13 @@
 **_[POST]_** /api/auth/login
 
 
-## Plants
+## Plants:
 
-### Get all plants for user:
+### Get all plants for user
 **_[GET]_** /api/:id/plants
 
 
-### Get individual plant:
+### Get individual plant
 **_[GET]_** /api/:id/plants/:plantId
 
 ### Add a Plant
