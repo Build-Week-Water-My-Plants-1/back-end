@@ -1,6 +1,6 @@
 # Water My Plants API:
 
-### herokuurl: PENDING
+### herokuurl: https://water-my-plants-12.herokuapp.com/
 
 ## Authentication Endpoints:
 
