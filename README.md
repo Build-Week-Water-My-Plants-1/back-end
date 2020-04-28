@@ -1,6 +1,6 @@
 # Water My Plants API:
 
-### herokuurl: https://water-my-plants-12.herokuapp.com/
+### heroku url: https://water-my-plants-12.herokuapp.com/
 
 ## Authentication Endpoints:
 
