@@ -11,6 +11,7 @@ exports.up = function (knex) {
       plants.increments().unique();
       plants.string('common_name', 255).notNullable().unique().index();
       plants.string('scientific_name', 255).notNullable().unique().index();
+      plants.integer('h2o_frequency').notNullable().unsigned();
     });
 };
 
