@@ -6,7 +6,7 @@ const validateUserId = require('../middleware/validate-userid.js');
 
 //GET
 router.get('/:id/plants', validateUserId, (req, res, next) => {
-  Plants.findByUser(req.params.id)
+  Plants.find(req.params.id)
     .then((plant) => {
       res.status(200).json(plant);
     })

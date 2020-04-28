@@ -1,6 +1,6 @@
 
 module.exports = {
-    findByUser,
+    find,
     findById,
     insert,
     update,
@@ -9,8 +9,8 @@ module.exports = {
 
 const db = require("../database/dbConfig.js");  
 
-function findByUser(user_id) {
-  return db("plants").where({ user_id: user_id });
+function find() {
+  return db("plants");
 };
 
 function findById(id) {

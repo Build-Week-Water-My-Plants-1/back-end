@@ -46,7 +46,7 @@ Returns token used for authorization on other endpoints, and user ID.
 
 ## Plants
 
-### Get all plants for user:
+### Get all plants:
 
 [GET] `/api/:id/plants`
 
