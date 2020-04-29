@@ -85,6 +85,7 @@ Returns token used for authorization on other endpoints, and user ID.
 {
   "id": 1,
   "common_name": "Rose",
-  "scientific_name": "Rosa"
+  "scientific_name": "Rosa",
+  "h2o_frequency": "3.5"
 }
 ```
