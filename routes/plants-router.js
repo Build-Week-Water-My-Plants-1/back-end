@@ -27,6 +27,16 @@ router.get('/:id/plants/:plantId', validateUserId, (req, res, next) => {
 
 //POST
 router.post('/:id/plants', validateUserId, (req, res) => {
+  let plant = req.body;
+  if (!plant.common_name) {
+    res.status(400).json({messsage: "Please include the plant common_name." })
+  }
+  if (!plant.scientific_name) {
+    res.status(400).json({messsage: "Please include the plant scientific_name." })
+  }
+  if (!plant.h2o_frequency) {
+    res.status(400).json({messsage: "Please include the plant h2o_frequency." })
+  }
   Plants.insert({ ...req.body })
     .then((newPlant) => {
       res.status(201).json(newPlant);
