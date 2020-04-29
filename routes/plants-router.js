@@ -60,9 +60,10 @@ router.put('/:id/plants/:plantId', validateUserId, (req, res, next) => {
 
 //DEL
 router.delete('/:id/plants/:plantId', validateUserId, (req, res, next) => {
+  const id = req.params.id
   Plants.remove(req.params.plantId)
     .then((removed) => {
-      res.status(200).json({ message: 'Plant has been deleted.' });
+      res.status(200).json({ message: `Plant with id ${id} has been deleted.`, id });
     })
     .catch((err) => {
       next(err);
